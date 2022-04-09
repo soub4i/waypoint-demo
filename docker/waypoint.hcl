@@ -1,12 +1,14 @@
-project = "my-project"
+project = "nginx-project"
 
-labels = { "platform" = "docker" }
 
 app "web" {
-    build {
-        use "docker" {}
+  build {
+    use "docker" {
     }
-    deploy {
-        use "docker" {}
+  }
+
+  deploy {
+    use "docker" {
     }
+  }
 }
